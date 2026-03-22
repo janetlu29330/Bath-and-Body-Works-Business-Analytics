@@ -1,0 +1,893 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Bath and Body Works Official Data Rearranged - Sheet1' inline='true' name='federated.1yxfe1e1fjhrjk1gex78811mwshf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bath and Body Works Official Data Rearranged - Sheet1' name='textscan.1x3y3cu1aes3vw1h6j0kx1j85gvl'>
+            <connection class='textscan' directory='C:/Users/ikeep/Downloads' filename='Bath and Body Works Official Data Rearranged - Sheet1.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1x3y3cu1aes3vw1h6j0kx1j85gvl' name='Bath and Body Works Official Data Rearranged - Sheet1.csv' table='[Bath and Body Works Official Data Rearranged - Sheet1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Fiscal Year' ordinal='0' />
+            <column datatype='date' name='Period Ending' ordinal='1' />
+            <column datatype='integer' name='Revenue' ordinal='2' />
+            <column datatype='real' name='Revenue Growth (YoY)' ordinal='3' />
+            <column datatype='integer' name='Cost of Revenue' ordinal='4' />
+            <column datatype='integer' name='Gross Profit' ordinal='5' />
+            <column datatype='integer' name='Selling, General &amp; Admin' ordinal='6' />
+            <column datatype='integer' name='Total Operating Expenses' ordinal='7' />
+            <column datatype='integer' name='Operating Income' ordinal='8' />
+            <column datatype='integer' name='Interest Expense' ordinal='9' />
+            <column datatype='integer' name='Other Non-Operating Expense / Income' ordinal='10' />
+            <column datatype='integer' name='Total Non-Operating Income / Expense' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fiscal Year]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Fiscal Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period Ending</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Period Ending]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Period Ending</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue Growth (YoY)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue Growth (YoY)]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Revenue Growth (YoY)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost of Revenue]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Cost of Revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gross Profit]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Gross Profit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Selling, General &amp; Admin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Selling, General &amp; Admin]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Selling, General &amp; Admin</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Operating Expenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Operating Expenses]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Total Operating Expenses</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Income]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Operating Income</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest Expense]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Interest Expense</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Non-Operating Expense / Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other Non-Operating Expense / Income]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Other Non-Operating Expense / Income</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Non-Operating Income / Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Non-Operating Income / Expense]</local-name>
+            <parent-name>[Bath and Body Works Official Data Rearranged - Sheet1.csv]</parent-name>
+            <remote-alias>Total Non-Operating Income / Expense</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Operating Margin' datatype='real' name='[Calculation_1389559169290241]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Operating Income]/[Revenue]' />
+      </column>
+      <column datatype='integer' name='[Fiscal Year]' role='dimension' type='quantitative' />
+      <column caption='Bath and Body Works Official Data Rearranged - Sheet1.csv' datatype='table' name='[__tableau_internal_object_id__].[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ikeep/AppData/Local/Temp/TableauTemp/#TableauTemp_0u28htd0f102ro1b365ea1qipqvz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/22/2026 01:44:20 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Fiscal Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fiscal Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fiscal Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Period Ending</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Period Ending]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Period Ending</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue Growth (YoY)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Revenue Growth (YoY)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue Growth (YoY)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cost of Revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cost of Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cost of Revenue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gross Profit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gross Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gross Profit</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Selling, General &amp; Admin</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Selling, General &amp; Admin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Selling, General &amp; Admin</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Operating Expenses</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Operating Expenses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Operating Expenses</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Operating Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Operating Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Operating Income</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Interest Expense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Interest Expense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Interest Expense</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other Non-Operating Expense / Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Other Non-Operating Expense / Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other Non-Operating Expense / Income</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Non-Operating Income / Expense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Non-Operating Income / Expense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Non-Operating Income / Expense</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Bath and Body Works Official Data Rearranged - Sheet1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Bath and Body Works Official Data Rearranged - Sheet1.csv' id='Bath and Body Works Official Data Rearranged - Sheet1.csv_5DC29D41AA9745A9AAED13EB229577CD'>
+            <properties context=''>
+              <relation connection='textscan.1x3y3cu1aes3vw1h6j0kx1j85gvl' name='Bath and Body Works Official Data Rearranged - Sheet1.csv' table='[Bath and Body Works Official Data Rearranged - Sheet1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Fiscal Year' ordinal='0' />
+                  <column datatype='date' name='Period Ending' ordinal='1' />
+                  <column datatype='integer' name='Revenue' ordinal='2' />
+                  <column datatype='real' name='Revenue Growth (YoY)' ordinal='3' />
+                  <column datatype='integer' name='Cost of Revenue' ordinal='4' />
+                  <column datatype='integer' name='Gross Profit' ordinal='5' />
+                  <column datatype='integer' name='Selling, General &amp; Admin' ordinal='6' />
+                  <column datatype='integer' name='Total Operating Expenses' ordinal='7' />
+                  <column datatype='integer' name='Operating Income' ordinal='8' />
+                  <column datatype='integer' name='Interest Expense' ordinal='9' />
+                  <column datatype='integer' name='Other Non-Operating Expense / Income' ordinal='10' />
+                  <column datatype='integer' name='Total Non-Operating Income / Expense' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bath and Body Works Official Data Rearranged - Sheet1' name='federated.1yxfe1e1fjhrjk1gex78811mwshf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yxfe1e1fjhrjk1gex78811mwshf'>
+            <column datatype='integer' name='[Fiscal Year]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[sum:Revenue:qk]</rows>
+        <cols>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[none:Fiscal Year:qk]</cols>
+      </table>
+      <simple-id uuid='{1E3D5E3E-5817-4CFF-8123-8EDBBDEF2D2D}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bath and Body Works Official Data Rearranged - Sheet1' name='federated.1yxfe1e1fjhrjk1gex78811mwshf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yxfe1e1fjhrjk1gex78811mwshf'>
+            <column caption='Operating Margin' datatype='real' name='[Calculation_1389559169290241]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Operating Income]/[Revenue]' />
+            </column>
+            <column datatype='integer' name='[Fiscal Year]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Operating Income]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1389559169290241]' derivation='Sum' name='[sum:Calculation_1389559169290241:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[sum:Calculation_1389559169290241:qk]</rows>
+        <cols>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[none:Fiscal Year:qk]</cols>
+      </table>
+      <simple-id uuid='{FC516F9E-5B12-4CCA-8AAD-1B0D5B06F465}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bath and Body Works Official Data Rearranged - Sheet1' name='federated.1yxfe1e1fjhrjk1gex78811mwshf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yxfe1e1fjhrjk1gex78811mwshf'>
+            <column datatype='integer' name='[Cost of Revenue]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Fiscal Year]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Selling, General &amp; Admin]' role='measure' type='quantitative' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cost of Revenue]' derivation='Sum' name='[sum:Cost of Revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Selling, General &amp; Admin]' derivation='Sum' name='[sum:Selling, General &amp; Admin:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1yxfe1e1fjhrjk1gex78811mwshf].[sum:Cost of Revenue:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1yxfe1e1fjhrjk1gex78811mwshf].[sum:Selling, General &amp; Admin:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1yxfe1e1fjhrjk1gex78811mwshf].[sum:Cost of Revenue:qk] + [federated.1yxfe1e1fjhrjk1gex78811mwshf].[sum:Selling, General &amp; Admin:qk])</rows>
+        <cols>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[none:Fiscal Year:qk]</cols>
+      </table>
+      <simple-id uuid='{B5149969-4CA4-413F-81A9-EE257EB5E507}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='213'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[none:Fiscal Year:ok]</field>
+            <field>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[none:Fiscal Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4DFA8703-2967-4881-80E8-F0FCA8272A2F}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[none:Fiscal Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9B6A2706-D986-4AF7-B8A5-1694A33D809C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yxfe1e1fjhrjk1gex78811mwshf].[none:Fiscal Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{96D81D8C-9E6E-497B-BB9F-2D28131CF71A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      O1Yy14vGpOsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
